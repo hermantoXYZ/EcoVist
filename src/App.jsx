@@ -5,6 +5,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import SearchInterface from './components/SearchInterface'
 import CategoryGrid from './components/CategoryGrid'
 import AboutUs from './pages/AboutUs'
+import Contact from './pages/Contact'
 import './App.css'
 import Footer from "./components/Footer";
 
@@ -25,6 +26,7 @@ function App() {
             </main>
           } />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>
