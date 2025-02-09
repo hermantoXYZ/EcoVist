@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
 import SearchInterface from './components/SearchInterface'
 import CategoryGrid from './components/CategoryGrid'
-import AboutUs from './pages/AboutUs'
+import AboutUs from './components/AboutUs'
 import './App.css'
 import Footer from "./components/Footer";
 
