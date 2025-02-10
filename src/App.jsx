@@ -8,6 +8,7 @@ import AboutUs from './pages/AboutUs'
 import Contact from './pages/Contact'
 import './App.css'
 import Footer from "./components/Footer";
+import ArticlesList from "./components/ArticlesList";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                 <SearchInterface />
               </div>
               <CategoryGrid />
+              <ArticlesList />              
             </main>
           } />
           <Route path="/about" element={<AboutUs />} />

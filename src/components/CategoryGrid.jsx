@@ -41,26 +41,29 @@ function CategoryGrid() {
   ]
 
   return (
-    <div className="category-grid">
-    {categories.map((category, index) => (
-      <div key={index} className="category-section">
-        <h2>{category.title}</h2>
-        <div className="category-items">
-          {category.items.map((item, idx) => (
-            <Link 
-              to={`/${category.title.toLowerCase().replace(/\s+/g, '-')}/${item.name.toLowerCase().replace(/\s+/g, '-')}`} 
-              key={idx}
-            >
-              <div className="category-item">
-                <span className="item-icon">{item.icon}</span>
-                <span className="item-name">{item.name}</span>
-              </div>
-            </Link>
-          ))}
-        </div>
+    <div className="category-container">
+      <h2>Latest Category</h2>
+      <div className="category-grid">
+        {categories.map((category, index) => (
+          <div key={index} className="category-section">
+            <h2>{category.title}</h2>
+            <div className="category-items">
+              {category.items.map((item, idx) => (
+                <Link 
+                  to={`/${category.title.toLowerCase().replace(/\s+/g, '-')}/${item.name.toLowerCase().replace(/\s+/g, '-')}`} 
+                  key={idx}
+                >
+                  <div className="category-item">
+                    <span className="item-icon">{item.icon}</span>
+                    <span className="item-name">{item.name}</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
+    </div>
   )
 }
 
