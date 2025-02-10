@@ -8,7 +8,7 @@ function Header() {
       <div className="nav-container">
         <div className="logo">
           <a href="/" style={{ color: '#fff', textDecoration: 'none' }}>
-            <h1>EcoVist</h1>
+            <h1>.XYZ</h1>
           </a>
         </div>
         <div className="nav-right">

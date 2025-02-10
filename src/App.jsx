@@ -13,7 +13,6 @@ function App() {
   return (
     <HelmetProvider>
     <Router>
-      <div className="app-container">
         <Header />
         <Routes>
           <Route path="/" element={
@@ -29,7 +28,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
-      </div>
+ 
     </Router>
     </HelmetProvider>
   )
